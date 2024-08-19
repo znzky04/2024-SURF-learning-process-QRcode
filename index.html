@@ -2,65 +2,120 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>音频分离结果</title>
+    <title>音频分离结果展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #666;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>音频分离结果展示</h1>
+    <div class="container">
+        <img src="LOGO.jpg" alt="">
 
-    <!-- 男男组 -->
-    <h2>男男组</h2>
-    <p>混合音频：</p>
-    <audio controls>
-        <source src="male_male_mixed.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频1：</p>
-    <audio controls>
-        <source src="male_male_separated_1.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频2：</p>
-    <audio controls>
-        <source src="male_male_separated_2.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
+        <h1>音频分离结果展示</h1>
 
-    <!-- 男女组 -->
-    <h2>男女组</h2>
-    <p>混合音频：</p>
-    <audio controls>
-        <source src="male_female_mixed.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频1：</p>
-    <audio controls>
-        <source src="male_female_separated_1.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频2：</p>
-    <audio controls>
-        <source src="male_female_separated_2.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
+        <!-- 男男组 -->
+        <h2>男男组</h2>
+        <p>混合音频：</p>
+        <audio controls>
+            <source src="male_male_mixed.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频1：</p>
+        <audio controls>
+            <source src="male_male_separated_1.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频2：</p>
+        <audio controls>
+            <source src="male_male_separated_2.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
 
-    <!-- 女女组 -->
-    <h2>女女组</h2>
-    <p>混合音频：</p>
-    <audio controls>
-        <source src="female_female_mixed.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频1：</p>
-    <audio controls>
-        <source src="female_female_separated_1.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
-    <p>分离音频2：</p>
-    <audio controls>
-        <source src="female_female_separated_2.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
-    </audio>
+        <!-- 男女组 -->
+        <h2>男女组</h2>
+        <p>混合音频：</p>
+        <audio controls>
+            <source src="male_female_mixed.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频1：</p>
+        <audio controls>
+            <source src="male_female_separated_1.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频2：</p>
+        <audio controls>
+            <source src="male_female_separated_2.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+
+        <!-- 女女组 -->
+        <h2>女女组</h2>
+        <p>混合音频：</p>
+        <audio controls>
+            <source src="female_female_mixed.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频1：</p>
+        <audio controls>
+            <source src="female_female_separated_1.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+        <p>分离音频2：</p>
+        <audio controls>
+            <source src="female_female_separated_2.wav" type="audio/wav">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
 </body>
 </html>
+
 
 
